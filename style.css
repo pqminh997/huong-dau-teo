@@ -22,7 +22,8 @@ body {
 
 .image-box, .image-box2, .image-box3, .image-box4, .image-box5, .image-box6 {
     width: 250px;
-    height: 350px;
+    height: auto;
+    aspect-ratio: 5 / 7;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,20 +33,11 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Căn chỉnh lại vị trí hợp lý */
 .image-box {
     background-image: url('./background.jpg');
     left: 10%;
     top: 10%;
 }
-/* 
-.image-box2 {
-    background-image: url('./img2.jpg');
-    left: 40%;
-    top: 5%;
-    width: 300px;
-    height: 400px;
-} */
 
 .image-box3 {
     background-image: url('./img2.jpg');
@@ -60,14 +52,6 @@ body {
     width: 280px;
     height: 380px;
 }
-
-/* .image-box5 {
-    background-image: url('./img5.jpg');
-    right: 40%;
-    bottom: 5%;
-    width: 320px;
-    height: 420px;
-} */
 
 .image-box6 {
     background-image: url('./img6.jpg');
