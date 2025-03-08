@@ -27,3 +27,8 @@ document.addEventListener("mousemove", (event) => {
         image.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
 });
+
+document.body.addEventListener("click", () => {
+    const audio = document.getElementById("playAudio");
+    audio.play().catch(err => console.log("Autoplay bị chặn:", err));
+}, { once: true }); // Chạy 1 lần duy nhất
