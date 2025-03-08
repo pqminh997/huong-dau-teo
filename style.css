@@ -21,9 +21,8 @@ body {
 }
 
 .image-box, .image-box2, .image-box3, .image-box4, .image-box5, .image-box6 {
-    width: 250px;
-    height: auto;
-    aspect-ratio: 5 / 7;
+    width: 20vw;
+    height: 35vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,8 +48,6 @@ body {
     background-image: url('./img4.jpg');
     left: 15%;
     bottom: 5%;
-    width: 280px;
-    height: 380px;
 }
 
 .image-box6 {
@@ -86,9 +83,9 @@ body {
 }
 
 .animated_march_text {
-    padding-top: 2em;
+    padding-top: 5%;
     font-family: Arial, sans-serif;
-    font-size: 6em;
+    font-size: 4em;
     background: linear-gradient(to bottom, #4ad382, #3faeec);
     -webkit-background-clip: text; /* Для кроссбраузерной поддержки */
     -webkit-text-fill-color: transparent; /* Для кроссбраузерной поддержки */
