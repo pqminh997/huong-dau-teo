@@ -20,42 +20,59 @@ body {
     perspective: 1000px;
 }
 
+.image-box, .image-box2, .image-box3, .image-box4, .image-box5, .image-box6 {
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Căn chỉnh lại vị trí hợp lý */
 .image-box {
-    width: 300px;
-    height: 400px;
-    background: url('./background.jpg') no-repeat center center/cover;
-    position: absolute;
+    background-image: url('./background.jpg');
     left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    animation: fadeIn 1.2s ease-out forwards, floating 3s ease-in-out infinite;
+    top: 10%;
 }
-
+/* 
 .image-box2 {
+    background-image: url('./img2.jpg');
+    left: 40%;
+    top: 5%;
     width: 300px;
     height: 400px;
-    background: url('./img2.jpg') no-repeat center center/cover;
-    position: absolute;
+} */
+
+.image-box3 {
+    background-image: url('./img2.jpg');
     right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    animation: fadeIn 1.2s ease-out forwards, floating 3s ease-in-out infinite;
+    top: 10%;
 }
 
-/* Fade-in xuất hiện mượt */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50%) rotateY(30deg);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(-50%) rotateY(10deg);
-    }
+.image-box4 {
+    background-image: url('./img4.jpg');
+    left: 15%;
+    bottom: 5%;
+    width: 280px;
+    height: 380px;
+}
+
+/* .image-box5 {
+    background-image: url('./img5.jpg');
+    right: 40%;
+    bottom: 5%;
+    width: 320px;
+    height: 420px;
+} */
+
+.image-box6 {
+    background-image: url('./img6.jpg');
+    right: 15%;
+    bottom: 10%;
 }
 
 /* Nhẹ nhàng trôi lên xuống */
@@ -65,30 +82,6 @@ body {
     }
     50% {
         transform: translateY(-48%) rotateY(12deg) translateX(5px);
-    }
-}
-
-/* Hiệu ứng hover rung nhẹ */
-.image-box:hover {
-    animation: shake 0.3s ease-in-out;
-}
-
-.image-box2:hover {
-    animation: shake 0.3s ease-in-out;
-}
-
-@keyframes shake {
-    0%, 100% {
-        transform: translateY(-50%) rotateY(10deg) translateX(0);
-    }
-    25% {
-        transform: translateY(-50%) rotateY(12deg) translateX(-3px);
-    }
-    50% {
-        transform: translateY(-50%) rotateY(8deg) translateX(3px);
-    }
-    75% {
-        transform: translateY(-50%) rotateY(12deg) translateX(-3px);
     }
 }
 
